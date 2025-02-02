@@ -1,0 +1,47 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #dee2e6; /* Very light grayish green */
+  color: #495057; /* Dark grayish green */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #6c757d; /* Medium grayish green */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #495057; /* Dark grayish green */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Dark theme with grayscale filter */
+body.dark-mode {
+  background-color: #181818;
+  color: #ddd;
+  filter: grayscale(100%);
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  header, footer {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .search-sort-theme {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

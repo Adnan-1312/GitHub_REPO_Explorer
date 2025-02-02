@@ -1,0 +1,74 @@
+/* RepoCard Styles */
+#repoList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  
+  
+  .repo-card {
+    height: 300px;
+    background-color: white;
+    border: 1px solid #adb5bd; /* Light grayish green */
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(23.333% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .repo-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .repo-name {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+  }
+  
+  .repo-owner {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .repo-description {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .repo-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .stars, .forks, .language {
+    margin-right: 10px;
+  }
+  
+  
+  /* Responsive media query */
+  @media (max-width: 768px) {
+    .repo-card {
+      width: 100%;
+    }
+  
+    .repo-name {
+      font-size: 1.2em;
+    }
+  
+    .repo-description {
+      max-height: none;
+    }
+  }
+  

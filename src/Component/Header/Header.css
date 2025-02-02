@@ -1,0 +1,15 @@
+/* Header Styles */
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 10px;
+      font-size: 1.2em;
+    }
+  }
+  
